@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wojciech Cioczek" />
+    <meta name="description" content="Zadanie projektowe" />
+    <title>Cena projektu</title>
+
+    <link rel="shortcut icon" href="../images/xyz.ico" />
+    <link rel="stylesheet" href="../styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="../styles/priceStyle.css" type="text/css" />
+  </head>
+
+  <body>
+    <br><br><br><br>
+    <div id="logout">
+        Strona główna
+    </div>
+
+    <div id="priceBox">
+      <h1>Sprawdź cenę swojego projektu!</h1>
+
+      <form id="calc">
+        <label class="checkWrap"
+          >Projekt graficzny
+          <input type="checkbox" id="gp" />
+          | <i>+500zł</i>
+          <span class="checkField"></span>
+        </label>
+
+        <label class="checkWrap"
+          >System CMS
+          <input type="checkbox" id="cms" />
+          | <i>+600zł</i>
+          <span class="checkField"></span>
+        </label>
+
+        <label class="checkWrap"
+          >Optymalizacja SEO
+          <input type="checkbox" id="seo" />
+          | <i>+600zł</i>
+          <span class="checkField"></span>
+        </label>
+
+        <label>Liczba podstron statycznych: </label>
+        <input type="number" id="num" oninput="validity.valid || (value='');" />
+        | <i>+50zł/strona</i>
+
+        <hr />
+
+        <label class="checkWrap"
+          >Ekspresowy czas wykonania
+          <input type="checkbox" id="express" />
+          | <i>+20%</i>
+          <span class="checkField"></span>
+        </label>
+
+        <input type="reset" id="hiddenReset" />
+      </form>
+
+      <div id="price"></div>
+
+      <div id="warning"></div>
+    </div>
+
+    <script src="../js/price.js"></script>
+  </body>
+</html>

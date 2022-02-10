@@ -1,0 +1,25 @@
+.fetchTable {
+  border-collapse: collapse;
+  margin: auto;
+  padding: 20px;
+  width: fit-content;
+  height: auto;
+}
+
+.fetchTable td,
+.fetchTable th {
+  padding: 8px;
+}
+
+.fetchTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #03c44d;
+  color: white;
+}
+
+.fetchTable tr:hover {
+  background-color: #272727;
+}
+
